@@ -11,12 +11,10 @@ using namespace std;
 
 int main() {
 // This program will simulate a storefront for Pokemon GBA flash carts.
-// The owner's name
-string name = "Johnny"
-// number of carts owned
-int carts = 100
-// price per cart
-double pricePerCart = 0.25
+// Variable set up
+string name = "Johnny";
+int number_of_carts = 100; // number of carts owned
+double pricePerCart = 0.25; // price per cart
 
 // calculate the total price of the carts
 // TODO
