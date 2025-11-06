@@ -92,5 +92,47 @@ int main() {
 
     // Question 3. Write a program to calculate a pizza party's cost and leftover pizza slices.
 
+    // Ask the user for input on their spectacular pizza party.
+    // Need to know: number of pizzas ordered, slices per pizza, number of visitors.
+    cout << "Welcome to the Question 3 Pizza Party Planner-O-Matic! We need some info from you to help you plan..." << endl;
+    cout << " " << endl; // blank line for spacing
+    cout << "How many pizzas do you plan to order? ";
+    int number_of_pizzas_ordered;
+    cin >> number_of_pizzas_ordered;
+
+    cout << "How many slices per pizza? ";
+    int slices_per_pizza;
+    cin >>slices_per_pizza;
+
+    cout << "How many visitors do you plan to invite? ";
+    int number_of_visitors;
+    cin >> number_of_visitors;
+
+    cout << " " << endl; // blank line for spacing
+
+    // Calculations setup
+    int total_slices = number_of_pizzas_ordered * slices_per_pizza;
+    int total_slices_eaten = number_of_visitors * 3;
+    int leftover_slices = total_slices - total_slices_eaten;
+    cout << "Alrighty, if I budget three slices per person, you will have..." << endl;
+    cout << leftover_slices << " slices of pizza left over after the party." << endl;
+    
+    cout << " " << endl; // blank line for spacing
+
+    cout << "I hope that's enough...hehehe..." << endl;
+
+    // decorative asterisks for transition
+    cout << "*******************************" << endl;
+    cout << "*******************************" << endl;
+    cout << "*******************************" << endl;
+    cout << "*******************************" << endl;
+   
+
+
+
+
+
+
+
     return 0;
 }
