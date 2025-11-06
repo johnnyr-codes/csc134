@@ -45,5 +45,52 @@ int main() {
     cout << "Account Number" << "\t\t" << account_number << endl;
     cout << "Final Balance" << "\t\t$" << final_balance << endl;
 
+    // decorative asterisks for transition
+    cout << "*******************************" << endl;
+    cout << "*******************************" << endl;
+    cout << "*******************************" << endl;
+    cout << "*******************************" << endl;
+
+    // Question 2. Using M2Lab1 as a basis, write a program to match the new crate conditions.
+
+    // Variable setup
+    double width;  // dimensions of the crate
+    double length;
+    double height;
+
+    // Ask user for dimensions
+    cout << "Welcome to the Question 2 Crate Volume-cost-profit Calculator 9000 V2." << endl;
+    cout << "Enter the width: ";
+    cin >> width;
+    cout << "Enter the length: ";
+    cin >> length;
+    cout << "Enter the height: ";
+    cin >> height;
+
+    // Calculations setup
+    double volume = width * length * height;  // volume formula
+    const double cost_per_cubic_foot = 0.3;  // cost to make the crate
+    double total_cost = volume * cost_per_cubic_foot;
+    const double customer_charge = volume * 0.52; // charge to customer
+    double profit = customer_charge - total_cost;
+
+    // Output results
+    cout << " " << endl; // blank line for spacing
+    cout << "The new results are in!" << endl;
+    cout << setprecision(2) << fixed << showpoint; // formatting to 2 decimal places
+    cout << "_______________________________" << endl; // blank space
+    cout << "Volume" << "\t\t\t" << volume << " cubic feet." << endl;
+    cout << "Cost" << "\t\t\t$" << total_cost << endl; 
+    cout << "Customer's charge" << "\t$" << customer_charge << endl;
+    cout << "Profit" << "\t\t\t$" << profit << endl;
+
+    // decorative asterisks for transition
+    cout << "*******************************" << endl;
+    cout << "*******************************" << endl;
+    cout << "*******************************" << endl;
+    cout << "*******************************" << endl;
+
+    // Question 3. Write a program to calculate a pizza party's cost and leftover pizza slices.
+
     return 0;
 }
