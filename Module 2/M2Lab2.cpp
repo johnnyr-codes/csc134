@@ -10,13 +10,13 @@ johnnyr
 using namespace std;
 
 int main() {
-    // Variable set up
+    // Variable setup
     double width;  // dimensions of the crate
     double length;
     double height;
 
     // Ask user for dimensions
-    cout << "Welcome to the crate volume-cost-profit calculator 9000. Please enter information accurately to ensure accurate results." << endl;
+    cout << "Welcome to the crate volume-cost-profit calculator 9000. Please verify input for accurate calcs!" << endl;
     cout << "Enter the width: ";
     cin >> width;
     cout << "Enter the length: ";
@@ -24,27 +24,22 @@ int main() {
     cout << "Enter the height: ";
     cin >> height;
 
-    // Calculate volume
+    // Calculations setup
     double volume = width * length * height;  // volume formula
-
-    cout << "_____________________" << endl; // blank space
-    cout << "Volume =" << "\t" << volume << "cubic units." << endl;
-
-    // Calculate cost
-    double cost_per_cubic_unit = 0.23;
+    const double cost_per_cubic_unit = 0.23;  // cost to make the crate
     double total_cost = volume * cost_per_cubic_unit;
-
-    cout << "Cost =" << "\t$" << total_cost << endl;
-
-    // Calculate customer's charge
-    double customer_charge = volume * 0.5;
-
-    cout << "Customer's charge =" << "\t$" << customer_charge << endl;
-
-    // Calculate profit
+    const double customer_charge = volume * 0.5; // charge to customer
     double profit = customer_charge - total_cost;
 
-    cout << "Profit =" << "\t$" << profit << endl;
+    // Output results
+    cout << " " << endl; // blank line for spacing
+    cout << "The results are in!" << endl;
+    cout << setprecision(2) << fixed << showpoint; // formatting to 2 decimal places
+    cout << "_______________________________" << endl; // blank space
+    cout << "Volume" << "\t\t\t" << volume << " cubic units." << endl;
+    cout << "Cost" << "\t\t\t$" << total_cost << endl; 
+    cout << "Customer's charge" << "\t$" << customer_charge << endl;
+    cout << "Profit" << "\t\t\t$" << profit << endl;
     
     return 0;
 }
