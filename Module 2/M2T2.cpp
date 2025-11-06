@@ -13,7 +13,7 @@ int main () {
 
     // variable set up
     string first_name;
-    string meal = "🍔 Plasma Beam Burger";
+    string meal = "Plasma Beam Burger";
     double house_meal_price = 5.99;
     double tax_rate = 0.08;
     double tax_amount = house_meal_price * tax_rate;
