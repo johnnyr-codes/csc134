@@ -13,7 +13,7 @@ int main () {
 
     // variable set up
     string first_name;
-    string meal = "Plasma Beam Burger";
+    string meal = "🍔 Plasma Beam Burger"; // Super Metroid lore from an avid fan: Plasma Beam is the strongest beam upgrade with a cool green color, and in the Metroid Prime series it is associated with the fire element
     double house_meal_price = 5.99;
     double tax_rate = 0.08;
     double tax_amount = house_meal_price * tax_rate;
@@ -21,13 +21,14 @@ int main () {
 
     // Imagine yourself seated at a new retro gaming-themed diner...
     // Your cheerful waitress returns to your table and asks about your meal. You respond and request the check.
-    cout << "I'm happy to know you enjoyed our house meal, the Plasma Beam Burger!" << endl;  // Super Metroid lore from an avid fan: Plasma Beam is the strongest beam upgrade with a cool green color, and in the Metroid Prime series it is associated with the fire element
+    cout << "I'm happy to know you enjoyed our house meal, the Plasma Beam Burger!" << endl;  
     cout << "Would you mind telling me your first name again for the check, please? ";
     cin >> first_name;
     cout << "Thank you, " << first_name << "!" << endl;
     cout << "I'll be right back with your check." << endl;
     // The waitress walks away briefly and returns with a printer paper check.
 
+    // Blank line for spacing
     cout << "      " << endl;
 
     // Print the check
