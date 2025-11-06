@@ -16,7 +16,7 @@ int main () {
     double house_meal_price = 5.99;
     double tax_rate = 0.08;
     double tax_amount = house_meal_price * tax_rate;
-    double total_cost = tax_amount + house_meal_price;
+    double total_cost;
 
     // Imagine yourself seated at a new retro gaming-themed diner...
     // Your cheerful waitress returns to your table and asks about your meal. You respond and request the check.
@@ -24,12 +24,26 @@ int main () {
     cout << "Would you mind telling me your first name again for the check, please? ";
     cin >> first_name;
     cout << "Thank you, " << first_name << "!" << endl;
-
+    cout << "I'll be right back with your check." << endl;
     // The waitress walks away briefly and returns with a printer paper check.
+
+    cout << "      " << endl;
+
+    // Print the check
+    cout << "Here is your check, " << first_name << ":" << endl;
+    cout << "      " << endl;
+
     // Meal price, tax rate, and total cost calculations
+
+    total_cost = tax_amount + house_meal_price;
+    cout << setprecision(2) << fixed; // formatting to 2 decimal places
+
+    cout << "THANK YOU FOR DINING WITH US!" << endl;
+    cout << "------------------" << endl;
     cout << "Plasma Beam Burger: " << house_meal_price << endl;
     cout << "Tax rate: 8%" << endl;
     cout << "Tax amount: " << tax_amount << endl;
+    cout << "------------------" << endl;
     cout << "TOTAL: " << total_cost << endl;
 
     return 0;
