@@ -13,6 +13,7 @@ int main () {
 
     // variable set up
     string first_name;
+    string meal = "🍔 Plasma Beam Burger";
     double house_meal_price = 5.99;
     double tax_rate = 0.08;
     double tax_amount = house_meal_price * tax_rate;
@@ -39,12 +40,11 @@ int main () {
     cout << setprecision(2) << fixed; // formatting to 2 decimal places
 
     cout << "THANK YOU FOR DINING WITH US!" << endl;
-    cout << "------------------" << endl;
-    cout << "Plasma Beam Burger: " << house_meal_price << endl;
-    cout << "Tax rate: 8%" << endl;
-    cout << "Tax amount: " << tax_amount << endl;
-    cout << "------------------" << endl;
-    cout << "TOTAL: " << total_cost << endl;
+    cout << "------------------------------" << endl;
+    cout << meal << "\t$" << house_meal_price << endl;
+    cout << "Tax:" << "\t\t\t$" << tax_amount << endl;
+    cout << "------------------------------" << endl;
+    cout << "TOTAL:" << "\t\t\t$" << total_cost << endl;
 
     return 0;
 }
