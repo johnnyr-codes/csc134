@@ -13,23 +13,27 @@ int main() {
     
     // Question 1. Write a program that simulates banking transactions.
     cout << "Welcome to the Question 1 Bank Simulator. For account acceess, please follow the prompts." << endl;
-    cout << "Enter your name as it appears on your account: ";
-    string account_name;
-    cin >> account_name;
+    cout << "Enter your first name: " << endl;
+    string account_first_name;
+    cin >> account_first_name;
 
-    cout << "Hello, " << account_name << ", please enter your account number: " << endl;
+    cout << "Enter your last name: " << endl;
+    string account_last_name;
+    cin >> account_last_name;
+
+    cout << "Hello, " << account_first_name << ", please enter your account number: " << endl;
     string account_number;
     cin >> account_number;
 
-    cout << "Enter your starting account balance, " << account_name << " :" << endl;
+    cout << "Enter your starting account balance, " << account_first_name << ":" << endl;
     double starting_balance;
     cin >> starting_balance;
 
-    cout << "Enter an amount to withdraw, " << account_name << " :" << endl;
+    cout << "Enter an amount to withdraw, " << account_first_name << ":" << endl;
     double withdrawal;
     cin >> withdrawal;
 
-    cout << "Enter an amount to deposit, " << account_name << " :" << endl;
+    cout << "Enter an amount to deposit, " << account_first_name << ":" << endl;
     double deposit;
     cin >> deposit;
 
@@ -41,7 +45,7 @@ int main() {
     cout << "Here are the results of your transactions..." << endl;
     cout << "_______________________________" << endl; // underscores for formatting
 
-    cout << "Account Name" << "\t\t" << account_name << endl;
+    cout << "Account Name" << "\t\t" << account_first_name << " " << account_last_name << endl;
     cout << "Account Number" << "\t\t" << account_number << endl;
     cout << "Final Balance" << "\t\t$" << final_balance << endl;
 
@@ -127,12 +131,30 @@ int main() {
     cout << "*******************************" << endl;
     cout << "*******************************" << endl;
    
+    
+    // Question 4. Write a program that cheers for FTCC's sports teams, woot woot!
+    cout << "Welcome to the Question 4 College Sports Team Cheer Maker!" << endl;
+    cout << " " << endl; // blank line for spacing
 
+    // Ask user for college and team names
+    cout << "Enter your college's name in abbreviated form (e.g., FTCC): " << endl;
+    string school;
+    cin >> school;
+    cout << " " << endl; // blank line for spacing
 
+    cout << "Enter your college's team name (e.g., Trojans): ";
+    string team;
+    cin >> team;
+    cout << " " << endl; // blank line for spacing
 
-
-
-
+    // Output a good 'ol cheer
+    cout << " " << endl; // blank line for spacing
+    cout << "Let's go " << school << endl;
+    cout << "Let's go " << school << endl;
+    cout << "Let's go " << school << endl;
+    cout << "Let's go " << team << endl;
+    cout << " " << endl; // blank line for spacing
+    cout << "Go Trojans!" << endl;
 
     return 0;
 }
