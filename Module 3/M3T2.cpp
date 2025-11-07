@@ -46,18 +46,23 @@ int main() {
 
      if (total == 7) {
         cout << "Lucky seven! WINNER!" << endl;
+        cout << "Play again?" << endl;
     }
     else if (total == 11) {
         cout << "Welcome to 7-ELEVEN, winner!" << endl;
+        cout << "Play again?" << endl;
     }
     else if (total == 2) {
         cout << "No step on snek! You lose...CRAP!" << endl;
+        cout << "Try again!" << endl;
     }
     else if (total == 3) {
         cout << "Strrrrike THREE...CRAP you're outta here!" << endl;
+        cout << "Try again!" << endl;
     }
     else if (total == 12) {
         cout << "CRAP...loser at the top of the hour!" << endl;
+        cout << "Try again!" << endl;
     }
     else {
         // anything else
