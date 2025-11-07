@@ -25,25 +25,21 @@ int main() {
     cout << "..." << endl; // ellipses for spacing
     int seed = time(0);
 
-    //cout << "Your seed is: " << seed << endl;
-    //cout << "What's your lucky number? ";
-    //cin >> seed;
-    // Seed the RNG
+    // Create the RNG chaos, set up variables
     srand(seed);
-
-    const int MAX = 6; // numbers from 1-6
+    const int SIDES = 6; // standard 6-sided dice
     int roll1, roll2, total;
-    roll1  = (rand() % MAX) + 1; // Divide by MAX, and just keep the remainder
+    roll1  = (rand() % SIDES) + 1; // Divide and keep the remainder
     cout << "First dice: " << roll1 << endl;
 
-    roll2  = (rand() % MAX) + 1; // Divide by MAX, and just keep the remainder
+    roll2  = (rand() % SIDES) + 1; // Divide and keep the remainder
     cout << "Second dice: " << roll2 << endl;
 
     total = roll1 + roll2;
     cout << "..." << endl; // ellipses for spacing
     cout << "You rolled: " << total << endl;
 
-
+    // Win/lose conditions
      if (total == 7) {
         cout << "Lucky seven! WINNER!" << endl;
         cout << "Play again?" << endl;
@@ -65,8 +61,8 @@ int main() {
         cout << "Try again!" << endl;
     }
     else {
-        // anything else
-        cout << "Your point count is now " << total << endl;
+    // Points aside from instant win/loss
+        cout << "Your point count for this roll is " << total << endl;
     }
 
     return 0;
