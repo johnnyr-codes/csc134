@@ -45,19 +45,19 @@ int main() {
 
 
      if (total == 7) {
-        cout << "Lucky seven! You win!" << endl;
+        cout << "Lucky seven! WINNER!" << endl;
     }
     else if (total == 11) {
-        cout << "Eleven is a winner!" << endl;
+        cout << "Welcome to 7-ELEVEN, winner!" << endl;
     }
     else if (total == 2) {
-        cout << "Snake eyes! Too bad, you lose." << endl;
+        cout << "No step on snek! You lose...CRAP!" << endl;
     }
     else if (total == 3) {
-        cout << "Sorry, three is unlucky, you lose." << endl;
+        cout << "Strrrrike THREE...CRAP you're outta here!" << endl;
     }
     else if (total == 12) {
-        cout << "Boxcars! Sorry, you lost." << endl;
+        cout << "CRAP...loser at the top of the hour!" << endl;
     }
     else {
         // anything else
